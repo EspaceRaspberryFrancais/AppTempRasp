@@ -13,4 +13,9 @@ git clone https://github.com/EspaceRaspberryFrancais/AppTempRasp.git
 ```
 
 ## Obtenir la référence de la sonde DS18B20
-Pour que le code fonctionne, il faut modifier le code de > app.py et renseigner le numéro de la sonde DS18B20
+Pour que le code fonctionne, il faut modifier le code de *app.py* et renseigner le numéro de la sonde DS18B20. Pour obtenir ce numéro, entrer les commandes suivantes :
+```
+sudo modprobe w1-gpio
+sudo modprobe w1-therm
+ls /sys/bus/w1/devices/
+```
