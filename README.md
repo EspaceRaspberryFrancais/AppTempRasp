@@ -7,5 +7,5 @@ La sonde se connecte au Raspberry en suivant le Schéma suivant :
 
 ## Installer le git
 Entrer les commandes suivantes pour télécharger le code :
-'cd ~
-git clone https://github.com/EspaceRaspberryFrancais/AppTempRasp.git'
+'cd ~'
+'git clone https://github.com/EspaceRaspberryFrancais/AppTempRasp.git'
