@@ -73,4 +73,4 @@ Lancer le programme en  entrant la commande suivante :
 cd /home/pi/AppTempRasp;
 sudo python3 app.py
 ```
-Il suffit ensuite de paramétrer l'application en ajoutant l'IP du Raspberry
+Il suffit ensuite de paramétrer l'application en ajoutant l'IP du Raspberry.
