@@ -56,3 +56,14 @@ Le fichier doit ressembler à ceci :
 #
 # m h  dom mon dow   command
 ```
+Si le fichier est vide, alors ouvrir un des deux suivants :
+> sudo nano /var/crontabs/root
+
+ou
+> sudo nano /var/spool/cron/crontabs/root
+
+Dans le fichier ouvert, ajouter à la dernière ligne ceci :
+```
+@reboot cd /home/pi/ProjetGraphTemp; sudo python3 app.py
+*/15 * * * * curl localhost:5000/getTemp?sauvegarde=True
+```
