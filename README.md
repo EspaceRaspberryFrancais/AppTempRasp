@@ -9,3 +9,4 @@ La sonde se connecte au Raspberry en suivant le Schéma suivant :
 Entrer les commandes suivantes pour télécharger le code :
 'cd ~'
 'git clone https://github.com/EspaceRaspberryFrancais/AppTempRasp.git'
+    grdgr
