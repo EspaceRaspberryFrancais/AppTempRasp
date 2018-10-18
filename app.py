@@ -10,9 +10,10 @@ GPIO.setwarnings(False)
 
 app = Flask(__name__)
 
+referenceSonde = "28-0317229e0bff"
 
 def getTemp(sauvegardeStatus):
-    fichSonde = open("/sys/bus/w1/devices/28-0317229e0bff/w1_slave")
+    fichSonde = open("/sys/bus/w1/devices/" + referenceSonde + "/w1_slave")
     contenu = fichSonde.read()
     fichSonde.close()
     secondeLigne = contenu.split("\n")[1]
