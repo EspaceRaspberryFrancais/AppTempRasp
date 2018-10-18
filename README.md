@@ -13,7 +13,7 @@ git clone https://github.com/EspaceRaspberryFrancais/AppTempRasp.git
 ```
 
 ## Obtenir la référence de la sonde DS18B20 et actualiser le code
-Pour que le code fonctionne, il faut modifier le code de *app.py* et renseigner le numéro de la sonde DS18B20. Pour obtenir ce numéro, entrer les commandes suivantes :
+Pour que le code fonctionne, il faut modifier le fichier de *app.py* et renseigner le numéro de la sonde DS18B20. Pour obtenir ce numéro, entrer les commandes suivantes :
 ```
 sudo modprobe w1-gpio
 sudo modprobe w1-therm
@@ -64,6 +64,13 @@ ou
 
 Dans le fichier ouvert, ajouter à la dernière ligne ceci :
 ```
-@reboot cd /home/pi/ProjetGraphTemp; sudo python3 app.py
-*/15 * * * * curl localhost:5000/getTemp?sauvegarde=True
+@reboot cd /home/pi/AppTempRasp; sudo python3 app.py
+*/5 * * * * curl localhost:5000/getTemp?sauvegarde=True
 ```
+## Et enfin...
+Lancer le programme en  entrant la commande suivante :
+```
+cd /home/pi/AppTempRasp;
+sudo python3 app.py
+```
+Il suffit ensuite de paramétrer l'application en ajoutant l'IP du Raspberry
