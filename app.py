@@ -28,7 +28,7 @@ def enregistrement(temperature):
     d = datetime.now()
     annee = str(d)[:4]
     jour = str(d)[:10]
-    repertoire = '/home/pi/ProjetGraphTemp/temperatures/' + annee + '/'
+    repertoire = '/home/pi/AppTempRasp/temperatures/' + annee + '/'
     if not os.path.isdir(repertoire):
         os.makedirs(repertoire)
     fich_Temp = repertoire + jour + '.txt'
