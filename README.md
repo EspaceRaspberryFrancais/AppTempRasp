@@ -19,3 +19,5 @@ sudo modprobe w1-gpio
 sudo modprobe w1-therm
 ls /sys/bus/w1/devices/
 ```
+Ceci renvoie quelque chose comme :
+> 28-0317229e0bff  w1_bus_master1
