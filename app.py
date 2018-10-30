@@ -53,7 +53,7 @@ def fichierVersListe(cheminFich):
 def minMaxTemp(liste, minOrMax):
     newListe = []
     for i in liste :
-        newListe.append(i[2])
+        newListe.append(float(i[2]))
     if minOrMax == "min" :
         index = newListe.index(min(newListe))
     else :
