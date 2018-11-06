@@ -25,6 +25,10 @@ Ceci renvoie quelque chose comme :
 Si rien est afficher, réaliser [ces étapes.](http://espace-raspberry-francais.fr/Composants/Sonde-de-temperature-DS18B20-sur-Raspberry-Francais/#sondeNonDetecte)
 
 La référence de la sonde est la partie en gras, il faut la recopier et le coller dans le fichier *app.py*, dans la variable ***referenceSonde***, ligne 13.
+Pour modifier le fichier *app.py* :
+``` 
+sudo nano ~/AppTempRasp/app.py
+```
 
 ## Automatiser la mesure de température
 Pour faire fonctionner les statistiques et le graphique, il faut automatiser la prise de température, demander au Raspberry de la mesurer à intervalle régulier. Pour se faire, il faut modifier le fichier situé :
