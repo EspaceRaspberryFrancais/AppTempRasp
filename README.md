@@ -22,6 +22,8 @@ ls /sys/bus/w1/devices/
 Ceci renvoie quelque chose comme :
 > **28-0317229e0bff**  w1_bus_master1
 
+Si rien est afficher, réaliser [ces étapes.](http://espace-raspberry-francais.fr/Composants/Sonde-de-temperature-DS18B20-sur-Raspberry-Francais/#sondeNonDetecte)
+
 La référence de la sonde est la partie en gras, il faut la recopier et le coller dans le fichier *app.py*, dans la variable ***referenceSonde***, ligne 13.
 
 ## Automatiser la mesure de température
