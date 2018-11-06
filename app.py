@@ -117,7 +117,7 @@ def statTemp(date):
         d = datetime.now()
     else:
         d = datetime.strptime(date, '%Y%m%d')
-    pointsAndTemp = fichierVersListe("/home/pi/ProjetGraphTemp/temperatures/" + str(d)[:4] + "/" + str(d)[:10] + ".txt")
+    pointsAndTemp = fichierVersListe("/home/pi/AppTempRasp/temperatures/" + str(d)[:4] + "/" + str(d)[:10] + ".txt")
     temperatures = pointsAndTemp[1]
     return render_template(
         'statTemp.html',
