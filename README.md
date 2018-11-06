@@ -71,7 +71,6 @@ Dans le fichier ouvert, ajouter à la dernière ligne ceci :
 ## Et enfin...
 Lancer le programme en  entrant la commande suivante :
 ```
-cd /home/pi/AppTempRasp;
 sudo python3 ~/AppTempRasp/app.py
 ```
 Il suffit ensuite de paramétrer l'application en ajoutant l'IP du Raspberry.
