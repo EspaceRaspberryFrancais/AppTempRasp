@@ -90,7 +90,7 @@ def graphTemp(date):
             strDay = "0" + strDay
         dateTitle = strDay + "/" + strMonth + "/" + str(d.year)
         titre = "Statistiques du " + dateTitle
-    pointsAndTemp = fichierVersListe("/home/pi/ProjetGraphTemp/temperatures/" + str(d)[:4] + "/" + str(d)[:10] + ".txt")
+    pointsAndTemp = fichierVersListe("/home/pi/AppTempRasp/temperatures/" + str(d)[:4] + "/" + str(d)[:10] + ".txt")
     temperatures = pointsAndTemp[1]
     nextDate = d + timedelta(days=1)
     prevDate = d - timedelta(days=1)
