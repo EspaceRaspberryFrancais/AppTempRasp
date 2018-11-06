@@ -31,8 +31,8 @@ sudo nano ~/AppTempRasp/app.py
 ```
 
 ## Automatiser la mesure de température
-Pour faire fonctionner les statistiques et le graphique, il faut automatiser la prise de température, demander au Raspberry de la mesurer à intervalle régulier. Pour se faire, il faut modifier le fichier situé :
-> sudo nano /var/spool/cron/crontabs/pi
+Pour faire fonctionner les statistiques et le graphique, il faut automatiser la prise de température, demander au Raspberry de la mesurer à intervalle régulier. Pour se faire, il faut modifier le fichier crontabs en entrant :
+> sudo crontab -e
 
 Le fichier doit ressembler à ceci :
 ```
@@ -62,11 +62,6 @@ Le fichier doit ressembler à ceci :
 #
 # m h  dom mon dow   command
 ```
-Si le fichier est vide, alors ouvrir un des deux suivants :
-> sudo nano /var/crontabs/root
-
-ou
-> sudo nano /var/spool/cron/crontabs/root
 
 Dans le fichier ouvert, ajouter à la dernière ligne ceci :
 ```
@@ -77,6 +72,6 @@ Dans le fichier ouvert, ajouter à la dernière ligne ceci :
 Lancer le programme en  entrant la commande suivante :
 ```
 cd /home/pi/AppTempRasp;
-sudo python3 app.py
+sudo python3 ~/AppTempRasp/app.py
 ```
 Il suffit ensuite de paramétrer l'application en ajoutant l'IP du Raspberry.
